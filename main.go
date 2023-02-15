@@ -23,7 +23,7 @@ func main() {
 		b2 int = 1
 		//or, to set a type automatically
 		b3                     = 1
-		boolean, float, string = true, 2.3, "Hello"
+		boolean, float, string = true, 2.2, "Hello"
 	)
 	fmt.Println("Hello World!")
 	fmt.Println(b1)
