@@ -3,38 +3,40 @@
 package main
 
 //Library
-import "fmt"
-
-//Package variables
-var (
-	//First letter lowercase, you can only use it in this package
-	name string
-	n1   int
-	n2   int
-	//First letter uppercase, can be used in other packages
-	//Ex: Name string
+import (
+	"fmt"
+	"strconv"
 )
+
+// Package variables
+var ()
 
 func main() {
 	//function variables
 	//All variables must be used to compile the code
-	var (
-		b1 int
-		b2 int = 1
-		//or, to set a type automatically
-		b3                     = 1
-		boolean, float, string = true, 2.2, "Hello"
-	)
-	fmt.Println("Hello World!")
-	fmt.Println(b1)
-	fmt.Println(b2)
-	fmt.Println(b3)
-	fmt.Println(boolean, float, string)
+	var ()
+	hello("Ítalo")
+	fmt.Println("the result is:", sum(1, 2))
+	total, err := convertAndSum(10, "32")
+	fmt.Println("the result is:", total, err)
+}
 
-	//swapping values between variables
-	var x = 10
-	var y = 20
-	fmt.Println(x, y)
-	x, y = y, x
-	fmt.Println(x, y)
+// Function with no Return and no type
+func hello(name string) {
+	fmt.Println("Hello", name, "!")
+}
+
+// Function with Return and type "int" after ()
+func sum(a, b int) int {
+	return a + b
+}
+
+func convertAndSum(a int, b string) (total int, err error) {
+	//Convert string to int
+	i, err := strconv.Atoi(b)
+	if err != nil {
+		return
+	}
+	total = a - i
+	return
 }
