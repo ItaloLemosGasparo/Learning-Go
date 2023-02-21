@@ -3,10 +3,10 @@
 //Editors
 VSC or Go Playground
 
-//language details
- := (variable declaration)
-  = (assignment operator)
-  automatic typing
+//language details:
+ := (variable declaration), 
+  = (assignment operator), 
+  automatic typing.
 
 ## Variables
 ~~~go
