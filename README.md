@@ -1,12 +1,12 @@
 # **<center>Learning-Golang</center>**
 
-#Editors
-//VSC or Go Playground
+//Editors
+VSC or Go Playground
 
-#language details
-// := (variable declaration)
-//  = (assignment operator)
-//automatic typing
+//language details
+ := (variable declaration)
+  = (assignment operator)
+  automatic typing
 
 ## Variables
 ~~~go
