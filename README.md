@@ -4,7 +4,7 @@
 VSC or Go Playground
 
 //language details:
- := (variable declaration, only works inside a codeblock), 
+ := (variable declaration, the "Gopher" only works inside a codeblock), 
   = (assignment operator), 
   automatic typing.
   
