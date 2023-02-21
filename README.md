@@ -4,9 +4,11 @@
 VSC or Go Playground
 
 //language details:
- := (variable declaration), 
+ := (variable declaration, only works inside a codeblock), 
   = (assignment operator), 
   automatic typing.
+  
+  
 
 ## Variables
 ~~~go
