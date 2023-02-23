@@ -1,32 +1,8 @@
 # **<center>Learning-Golang</center>**
 
-<<<<<<< HEAD
-## Basic
-
-~~~go
-// Packaging is how Go organizes its code
-// It's possible to have only 1 package per folder
-package main
-
-//Libraries
-import ()
-
-//Package variables
-var ()
-
-//main function
-func main() {
-	//function variables
-	//All variables must be used to compile the code
-	var ()
-}
-~~~
-=======
-//Editors
-VSC or Go Playground
->>>>>>> bd3f0511903016a93861b88d671075c880041cb0
-
 ## Variables
+":=" (variable declaration)
+"=" (assignment operator)
 ~~~go
 package main
 import "fmt"
