@@ -1,17 +1,37 @@
 # **<center>Learning-Golang</center>**
 
+## Basic
+
+~~~go
+// Packaging is how Go organizes its code
+// It's possible to have only 1 package per folder
+package main
+
+//Libraries
+import ()
+
+//Package variables
+var ()
+
+//main function
+func main() {
+	//function variables
+	//All variables must be used to compile the code
+	var ()
+}
+~~~
+
 ## Variables
 ~~~go
 package main
 import "fmt"
 //Package variables
 var (
-	//First letter lowercase, you can only use it in this package
+    //Variables with uppercase first letter means it's an exportable Variable
+    //Variables with lowercase first letter means it's a Variable for this package only
 	name string
 	n1   int
-	n2   int
-	//First letter uppercase, can be used in other packages
-	//Ex: Name string
+	N2   int
 )
 func main() {
 	//function variables
@@ -38,13 +58,18 @@ func main() {
 
 ~~~go
 package main
-import "fmt"
+import (
+    "fmt" 
+    "strconv"
+)
 func main() {
     hello("Ítalo") //func hello
     fmt.Println("the result is:", sum(1, 2)) //func sum
     total, err := convertAndSum(10, "32") //func convertAndSum
 	fmt.Println("the result is:", total, err) //result of func convertAndSum
 }
+//Functions with uppercase first letter means it's an exportable function
+//Functions with lowercase first letter means it's a function for this package only
 // Function with no Return
 func hello(name string) {
 	fmt.Println("Hello", name, "!")
