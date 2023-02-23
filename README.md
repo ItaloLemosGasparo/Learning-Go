@@ -26,6 +26,13 @@ func main() {
 VSC or Go Playground
 >>>>>>> bd3f0511903016a93861b88d671075c880041cb0
 
+//language details:
+ := (variable declaration, the "Gopher" only works inside a codeblock), 
+  = (assignment operator), 
+  automatic typing.
+  
+  
+
 ## Variables
 ~~~go
 package main
