@@ -1,5 +1,6 @@
 # **<center>Learning-Golang</center>**
 
+<<<<<<< HEAD
 ## Basic
 
 ~~~go
@@ -20,6 +21,10 @@ func main() {
 	var ()
 }
 ~~~
+=======
+//Editors
+VSC or Go Playground
+>>>>>>> bd3f0511903016a93861b88d671075c880041cb0
 
 ## Variables
 ~~~go

@@ -34,12 +34,13 @@ func main() {
 	fmt.Println(string(data))
 }
 
-func tossACoin(side string)  {
+func tossACoin(side string) {
 	switch side {
-	case "heads": 
-	heads++
-	case "tails": 
-	tails+
-	default: fmt.print
+	case "heads":
+		heads++
+	case "tails":
+		tails++
+	default:
+		fmt.Println("the coin landed on its feet")
 	}
 }
