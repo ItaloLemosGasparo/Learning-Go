@@ -1,8 +1,7 @@
 # **<center>Learning-Golang</center>**
 
 ## Variables
-":=" (variable declaration)
-"=" (assignment operator)
+" := " (variable declaration), " = " (assignment operator)
 ~~~go
 package main
 import "fmt"
@@ -72,4 +71,49 @@ func convertAndSum(a int, b string) (total int, err error) {
     //both the returns will return total and err
 	return
 }
+~~~
+
+## Validations
+
+~~~go
+package main
+import (
+	"fmt"
+	"log"
+	"os"
+)
+func main() {
+	a, b := 10, 20
+	if a > b {
+		fmt.Println("a is > than b")
+	} else if a < b {
+		fmt.Println("a is < than b")
+	} else {
+		fmt.Println("a is equal b")
+	}
+	//No Go pode-se fazer verificações no Switch Case
+	switch {
+	case a > b:
+		fmt.Println("a is > than b")
+	case a > b:
+		fmt.Println("a is < than b")
+	default:
+		fmt.Println("a is equal b")
+	}
+	//este "err" esta disponivel para todo o package
+	//os.Open esta "lendo" o arquivo "hello.txt"
+	file, err := os.Open("hello.txt")
+	// "err != nil" é para verificar se err recebeu algum erro da função "os.Open"
+	if err != nil {
+		log.Panic(err)
+	}
+	//data é uma variavel que recebe o retorno da função make que esta criando um array de 100 byte
+	data := make([]byte, 100)
+	//file.Read retorna 2 dados, a quantidade de bytes que ela leu(" _ ") ou um erro caso ocorra(" erro ")
+	//este "erro" esta disponivel apenas para este if
+	//if ternario \/
+	if _, erro := file.Read(data); erro != nil {
+		log.Panic(err)
+	}
+	fmt.Println(string(data))
 ~~~
